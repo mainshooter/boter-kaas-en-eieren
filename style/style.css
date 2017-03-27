@@ -1,0 +1,96 @@
+html {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#stap1 {
+  width: 100%;
+  text-align: center;
+  padding-top: 20%;
+  height: 100%;
+  display: block;
+}
+.knop {
+  background-color: red;
+  border: 2px solid white;
+  border-radius: 5px;
+  height: 30px;
+  width: 109px;
+  margin-top: 15px;
+  color: white;
+  box-shadow: 0px 3px 5px black;
+  cursor:pointer;
+  transition: 1s;
+  -webkit-transition: box-shadow 1s;
+}
+.knop:focus{
+  box-shadow: 0px -2px 5px black;
+  border: 0;
+  outline: none;
+  transition: 1s;
+  -webkit-transition: box-shadow 1s;
+  background-color: #F20A0A;
+}
+.knop:hover {
+  box-shadow: 0px -2px 5px black;
+  transition: 1s;
+  -webkit-transition: box-shadow 1s;
+  background-color: #F20A0A;
+}
+#stap2 {
+  width: 100%;
+  text-align: center;
+  padding-top: 20%;
+  height: 100%;
+  display: none;
+}
+#stap3 {
+  width: 100%;
+  text-align: center;
+  padding-top: 20%;
+  height: 100%;
+  display: none;
+}
+
+#stap4 {
+  width: 100%;
+  text-align: center;
+  padding-top: 20%;
+  height: 100%;
+  display: none;
+}
+table {
+  margin: 0 auto;
+}
+td {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  text-align: center;
+  margin: auto;
+  color: white;
+}
+
+#stap5 {
+    width: 100%;
+    text-align: center;
+    padding-top: 20%;
+    height: 100%;
+    display: none;
+}
+#scoreboard {
+  float: right;
+  position: relative;
+  bottom: 200px;
+  right: 35px;
+}
+ul li{
+  list-style-type: none;
+}

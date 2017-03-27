@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<link id="pagestyle" href="style/style.css" rel="stylesheet" type="text/css" media="all">
+<title>Boter, Kaas en eieren</title>
+
+<script src="js/jq.js"></script>
+</head>
+
+<body onload="height();" onresize="height();">
+  <div id="stap1">
+    <div id="playername">
+      <form id="namen">
+        <div>Speler1</div>
+        <input type="text" name="player1" id="spelername1" placeholder="speler1 naam" />
+        <div>Speler2 of computer</div>
+        <input type="text" name="player2" id="spelername2" placeholder="speler2 naam" />
+        <div></div>
+        <button type="button" id="sendname" class="knop">Verder</button>
+      </form>
+    </div>
+  </div>
+
+
+
+  <div id="stap2">
+    <form>
+      <input type="radio" name="gamemode" id="radioPlayer" value="player" />Speler VS Speler <br>
+      <input type="radio" name="gamemode" id="radioPC" value="pc" />Speler VS Computer<br>
+      <button type="button" class="knop" id="sendGamemode">gamemode</button>
+    </form>
+  </div>
+
+
+
+  <div id="stap3">
+    <input type="radio" name="thema" id="herfst" value="herfst"/><div>Herfst</div><br>
+    <input type="radio" name="thema" id=winter value="winter"/><div>Winter</div><br>
+    <input type="radio" name="thema" id="lente" value="lente"/>Lente<br>
+    <input type="radio" name="thema" id="zomer" value="zomer"/>zomer<br>
+    <button type="button" class="knop" id="sendThema">Send Thema</button>
+    <div id="themaVoorbeeld"></div>
+  </div>
+
+
+  <div id="stap4">
+    <table>
+      <tr>
+        <td id="bord0"></td>
+        <td id="bord1"></td>
+        <td id="bord2"></td>
+      </tr>
+      <tr>
+        <td id="bord3"></td>
+        <td id="bord4"></td>
+        <td id="bord5"></td>
+      </tr>
+      <tr>
+        <td id="bord6"></td>
+        <td id="bord7"></td>
+        <td id="bord8"></td>
+      </tr>
+    </table>
+    <div id="scoreboard">
+      <ul>
+        <li><span id="spelernaam1"></span> score:<span id="score1"></span></li>
+        <li><span id="spelernaam2"></span> score:<span id="score2"></span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="stap5">
+    <h1 id="WinnerTitel"></h1>
+  </div>
+<script src="js/main.js"></script>
+</body>
+</html>
